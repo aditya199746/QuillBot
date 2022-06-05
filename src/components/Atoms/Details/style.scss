@@ -1,0 +1,118 @@
+.details {
+  width: 90%;
+  height: 350px;
+  background: #394b61;
+  border-radius: 11px;
+  display: flex;
+  transition: 2s;
+  animation: openModal 3s ease-out forwards;
+  .left-img {
+    height: 100%;
+    width: 30%;
+    img {
+      width: 100%;
+      height: 100%;
+
+      border-radius: 11px 0 0 11px;
+    }
+  }
+  .right-content {
+    width: 60%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 15px;
+    color: #d4d7dd;
+    h3 {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 41px;
+    }
+    .details-list {
+      list-style-type: none;
+      padding: 0;
+      li {
+        white-space: nowrap;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 31px;
+        display: flex;
+        span {
+          &:first-child {
+            min-width: 150px;
+          }
+        }
+      }
+    }
+    .details-text {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      color: #ffffff;
+    }
+    .button-container {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 26px;
+
+      border: 0;
+      button {
+        &:nth-child(1) {
+          width: 154px !important;
+          height: 38px;
+          background: #00e0ff;
+          border-radius: 5px;
+          border: 0;
+          margin-right: 15px;
+        }
+        &:nth-child(2) {
+          width: 126px;
+          height: 38px;
+          background: transparent;
+          border: 1px solid #00e0ff;
+          color: #00e0ff;
+        }
+      }
+    }
+  }
+}
+
+@keyframes openModal {
+  0% {
+    transform: scaleY(0.1) translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: scaleY(1) translate3d(0, 0, 0);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .details {
+    flex-direction: column;
+    height: 560px;
+    width: 95%;
+    .left-img {
+      height: 30%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .right-content {
+      width: 100%;
+      margin: 0;
+      padding-left: 6px;
+      .details-list {
+        width: 100%;
+      }
+      .button-container {
+        display: flex;
+      }
+    }
+  }
+}

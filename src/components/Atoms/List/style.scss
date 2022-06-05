@@ -1,0 +1,67 @@
+::-webkit-scrollbar {
+  width: 0px;
+}
+.content-wrapper {
+  width: 100%;
+  padding: 24px;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  .cards-wrapper {
+    height: 295px;
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    color: #d4d7dd;
+    overflow-x: scroll;
+    .movie-card:not(:first-child) {
+      margin-left: 25px;
+    }
+    .movie-card {
+      width: 178px;
+      height: 275px;
+      background: #394b61;
+      border-radius: 11px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      flex-shrink: 0;
+
+      img {
+        border-radius: 11px;
+        padding: 5px;
+        margin: 0 8px;
+        width: 160px;
+        height: 208px;
+        pointer-events: none;
+      }
+      span {
+        margin-left: 5%;
+        font-size: 13px;
+        pointer-events: none;
+      }
+      .btn-wrapper {
+        margin-left: 15px;
+
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  .content-wrapper {
+    .cards-wrapper {
+      overflow-x: scroll;
+      .movie-card {
+        flex-shrink: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+* {
+  color: #d4d7dd;
+}
+.box-container {
+  width: 24px;
+  height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: width 2s ease-in-out;
+  background: #1a2536;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  input {
+    width: 85%;
+    background: transparent;
+    border: 0;
+    margin-left: 10px;
+  }
+  button {
+    background: transparent;
+    border: 0;
+
+    margin-left: 10px;
+  }
+  input:focus-visible {
+    outline: none;
+  }
+}
+.trans {
+  width: 50%;
+}
+
+@media only screen and (max-width: 480px) {
+  .box-container {
+    position: absolute;
+    left: 80px;
+  }
+}
