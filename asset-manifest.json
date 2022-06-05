@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/QuillBot/static/css/main.7757bc9e.css",
+    "main.js": "/QuillBot/static/js/main.1d8f6dfc.js",
+    "static/js/787.5a8089fc.chunk.js": "/QuillBot/static/js/787.5a8089fc.chunk.js",
+    "static/media/image 8.png": "/QuillBot/static/media/image 8.09096b6f9da84c635556.png",
+    "index.html": "/QuillBot/index.html",
+    "main.7757bc9e.css.map": "/QuillBot/static/css/main.7757bc9e.css.map",
+    "main.1d8f6dfc.js.map": "/QuillBot/static/js/main.1d8f6dfc.js.map",
+    "787.5a8089fc.chunk.js.map": "/QuillBot/static/js/787.5a8089fc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7757bc9e.css",
+    "static/js/main.1d8f6dfc.js"
+  ]
+}
